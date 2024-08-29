@@ -43,7 +43,7 @@ function BlogCard({ blog }) {
         <p className='mb-2 text-sm text-[#16f2b3]'>
           {`${blog.reading_time_minutes} Min Read`}
         </p>
-        <p className='text-sm lg:text-base text-[#d3d8e8] pb-3 lg:pb-6 line-clamp-3'>
+        <p className='text-sm lg:text-base text-[#d3d8e8] pb-3 lg:pb-6 line-clamp-3 mb-4'>
           {blog.description}
         </p>
         {/* <div className="">
@@ -53,6 +53,9 @@ function BlogCard({ blog }) {
             </button>
           </Link>
         </div> */}
+        <p className="text-sm text-[#e0e0e0] bg-[#252a4a] w-full py-2 text-center absolute bottom-0 left-0">
+          Author: {blog.user?.name}
+        </p>
       </div>
     </div>
   );
