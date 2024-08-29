@@ -9,20 +9,34 @@ import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
 
 async function getData() {
-  const res = await fetch(
-    `https://dev.to/api/articles?username=${personalData.devUsername}`
-  );
+  let page = 1;
+  const allBlogs = [];
 
-  if (!res.ok) {
-    throw new Error('Failed to fetch data')
+  while (true) {
+    const res = await fetch(
+      `https://dev.to/api/articles?username=${personalData.devUsername}&page=${page}&per_page=100`
+    );
+
+    if (!res.ok) {
+      throw new Error("Failed to fetch data");
+    }
+
+    const data = await res.json();
+    if (data.length === 0) {
+      break; // No more articles available
+    }
+
+    const filtered = data.filter((item) => item?.cover_image); // Filter blogs with cover image
+    allBlogs.push(...filtered);
+
+    // Optional: Add delay to avoid hitting rate limits
+    await new Promise((resolve) => setTimeout(resolve, 1000)); // 1-second delay
+    page++;
   }
 
-  const data = await res.json();
-
-  const filtered = data.filter((item) => item?.cover_image).sort(() => Math.random() - 0.5);
-
-  return filtered;
-};
+  // Shuffle the combined list of articles
+  return allBlogs.sort(() => Math.random() - 0.5);
+}
 
 export default async function Home() {
   const blogs = await getData();
