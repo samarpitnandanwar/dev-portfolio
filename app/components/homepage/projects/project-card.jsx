@@ -13,7 +13,7 @@ function ProjectCard({ project }) {
           <Image
             src={project.image}
             alt={project.name}
-            className="w-full h-40 object-cover rounded-t-lg cursor-pointer transform transition-transform duration-[1500ms] ease-[cubic-bezier(0.25, 1, 0.5, 1)] hover:scale-110 hover:h-auto"
+            className="w-full h-40 object-cover rounded-t-lg cursor-pointer transform transition-transform duration-[1500ms] ease-[cubic-bezier(0.42, 0, 0.58, 1)] hover:scale-110 hover:h-auto"
           />
         </Link>
       )}
