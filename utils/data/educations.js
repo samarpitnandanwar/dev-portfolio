@@ -17,7 +17,7 @@ export const educations = [
     id: 3,
     title: "Secondary School Certificate",
     duration: "2017 - 2018",
-    institution: "Dnyanmata High School Main, Amravati",
+    institution: "Dnyanmata High School, Amravati",
     grade: "Percentage : 84%",
   },
 ];

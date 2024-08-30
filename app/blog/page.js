@@ -4,15 +4,28 @@ import { personalData } from "@/utils/data/personal-data";
 import BlogCard from "../components/homepage/blog/blog-card";
 
 async function getBlogs() {
-  const res = await fetch(`https://dev.to/api/articles`)
+  let page = 1;
+  const allBlogs = [];
 
-  if (!res.ok) {
-    throw new Error('Failed to fetch data')
+  while (true) {
+    const res = await fetch(
+      `https://dev.to/api/articles?username=${personalData.devUsername}&page=${page}&per_page=2000`
+    );
+
+    if (!res.ok) {
+      throw new Error("Failed to fetch data");
+    }
+
+    const data = await res.json();
+    if (data.length === 0) {
+      break; // No more articles available
+    }
+    allBlogs.push(...data);
+    page++;
   }
 
-  const data = await res.json();
-  return data;
-};
+  return allBlogs;
+}
 
 async function page() {
   const blogs = await getBlogs();
@@ -30,15 +43,12 @@ async function page() {
       </div>
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 md:gap-5 lg:gap-8 xl:gap-10">
-        {
-          blogs.map((blog, i) => (
-            blog?.cover_image &&
-            <BlogCard blog={blog} key={i} />
-          ))
-        }
+        {blogs.map((blog, i) => (
+          blog?.cover_image && <BlogCard blog={blog} key={i} />
+        ))}
       </div>
     </div>
   );
-};
+}
 
 export default page;

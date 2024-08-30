@@ -13,7 +13,7 @@ export const skillsData = [
   "Python",
   "SQL",
   "Node.js",
-  "Express.js",
+  "Express",
   "Wordpress",
 ];
 
