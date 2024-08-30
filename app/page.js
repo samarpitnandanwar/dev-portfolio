@@ -7,6 +7,7 @@ import Experience from "./components/homepage/experience";
 import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
+import GithubCalendar from "../app/components/GithubCalendar";
 
 async function getData() {
   let page = 1;
@@ -50,6 +51,7 @@ export default async function Home() {
       <Projects />
       <Education />
       <Blog blogs={blogs} />
+      <GithubCalendar username="samarpitnandanwar" />
       <ContactSection />
     </>
   )
