@@ -1,5 +1,6 @@
-import crefin from "/public/image/crefin.jpg";
-import travel from "/public/image/travel.jpg";
+import restaurant from "/public/image/restaurant.png";
+import company from "/public/image/company.png";
+import ccfd from "/public/image/ccfd.png";
 
 export const projectsData = [
   {
@@ -11,7 +12,7 @@ export const projectsData = [
     role: "Full Stack Developer",
     code: "",
     link: "https://restaurant-samarpit.netlify.app",
-    image: crefin,
+    image: restaurant,
   },
   {
     id: 2,
@@ -22,7 +23,7 @@ export const projectsData = [
     role: "Full Stack Developer",
     code: "",
     link: "https://logic-loop-solutions.netlify.app",
-    image: travel,
+    image: company,
   },
   {
     id: 3,
@@ -33,7 +34,7 @@ export const projectsData = [
     role: "Full Stack Developer",
     code: "",
     link: "https://drive.google.com/file/d/1sqLDppKPRt0Uys2gnOpaSowc2elmibs2/view",
-    image: travel,
+    image: ccfd,
   },
 ];
 
