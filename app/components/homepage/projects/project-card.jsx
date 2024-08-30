@@ -10,11 +10,13 @@ function ProjectCard({ project }) {
       {/* Image Section */}
       {project.image && (
         <Link href={project.link} target="_blank">
-          <Image
-            src={project.image}
-            alt={project.name}
-            className="w-full h-40 object-cover rounded-t-lg cursor-pointer transform transition-transform duration-[1500ms] ease-[cubic-bezier(0.42, 0, 0.58, 1)] hover:scale-110 hover:h-auto"
-          />
+          <div className="relative w-full h-40 overflow-hidden rounded-t-lg">
+            <Image
+              src={project.image}
+              alt={project.name}
+              className="absolute top-0 left-0 w-full h-full object-cover transform transition-transform duration-[1500ms] ease-[cubic-bezier(0.42, 0, 0.58, 1)] hover:scale-110"
+            />
+          </div>
         </Link>
       )}
       <div className="flex flex-row">
