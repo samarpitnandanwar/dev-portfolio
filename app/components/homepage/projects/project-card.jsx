@@ -1,11 +1,22 @@
 // @flow strict
 
+import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
 
 function ProjectCard({ project }) {
   return (
     <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">
+      {/* Image Section */}
+      {project.image && (
+        <Link href={project.link} target="_blank">
+          <Image
+            src={project.image}
+            alt={project.name}
+            className="w-full h-40 object-cover rounded-t-lg cursor-pointer transform transition-transform duration-[1500ms] ease-[cubic-bezier(0.25, 1, 0.5, 1)] hover:scale-110 hover:h-auto"
+          />
+        </Link>
+      )}
       <div className="flex flex-row">
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
         <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
