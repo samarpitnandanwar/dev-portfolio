@@ -30,7 +30,7 @@ export const projectsData = [
     name: "Credit Card Fraud Detection Using ML",
     description:
       "Developed and deployed supervised learning algorithms, such as logistic regression, decision trees, andrandom forests, to accurately identify fraudulent transactions in real-time. Conducted comprehensive data preprocessing and feature engineering to create informative variables",
-    tools: ["Wordpress", "Elementor"],
+    tools: ["Python", "Numpy", "Pandas", "Sklearn", "Streamlit"],
     role: "Full Stack Developer",
     code: "",
     link: "https://drive.google.com/file/d/1sqLDppKPRt0Uys2gnOpaSowc2elmibs2/view",
