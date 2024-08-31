@@ -10,7 +10,7 @@ function ProjectCard({ project }) {
       {/* Image Section */}
       {project.image && (
         <Link href={project.link} target="_blank">
-          <div className="relative w-full h-40 overflow-hidden rounded-t-lg">
+          <div className="relative w-full h-64 overflow-hidden rounded-t-lg">
             <Image
               src={project.image}
               alt={project.name}
