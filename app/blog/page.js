@@ -9,7 +9,7 @@ async function getBlogs() {
 
   while (true) {
     const res = await fetch(
-      `https://dev.to/api/articles?username=${personalData.devUsername}&page=${page}&per_page=300`
+      `https://dev.to/api/articles?username=${personalData.devUsername}&page=${page}&per_page=400`
     );
 
     if (!res.ok) {
