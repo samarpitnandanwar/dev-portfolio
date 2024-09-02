@@ -1,6 +1,8 @@
 import restaurant from "/public/image/restaurant.png";
 import company from "/public/image/company.png";
 import ccfd from "/public/image/ccfd.png";
+import netflix from "/public/image/netflix.png";
+import halloween from "/public/image/halloween.png";
 
 export const projectsData = [
   {
@@ -35,6 +37,28 @@ export const projectsData = [
     code: "",
     link: "https://drive.google.com/file/d/1sqLDppKPRt0Uys2gnOpaSowc2elmibs2/view",
     image: ccfd,
+  },
+  {
+    id: 4,
+    name: "Halloween Website",
+    description:
+      "Halloween website is a spooky-themed e-commerce platform offering a variety of candies and chocolates featuring iconic Halloween characters. It’s the ultimate destination for trick-or-treaters looking for unique, festive sweets to celebrate the season!",
+    tools: ["HTML", "CSS", "JavaScript", "SCSS"],
+    role: "Full Stack Developer",
+    code: "",
+    link: "https://halloween-samarpit-nandanwar.netlify.app/",
+    image: halloween,
+  },
+  {
+    id: 5,
+    name: "Netflix Clone",
+    description:
+      "Netflix clone website is a sleek, interactive platform built with HTML, CSS, and JavaScript, mimicking the look and feel of the popular streaming service. It showcases a user-friendly interface with movie carousels, trailers, and an immersive browsing experience for entertainment lovers.",
+    tools: ["HTML", "CSS", "JavaScript"],
+    role: "Full Stack Developer",
+    code: "",
+    link: "https://samarpitnandanwar.github.io/Netflix-Clone--SAMARPIT-NANDANWAR/",
+    image: netflix,
   },
 ];
 
