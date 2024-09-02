@@ -3,6 +3,7 @@ import company from "/public/image/company.png";
 import ccfd from "/public/image/ccfd.png";
 import netflix from "/public/image/netflix.png";
 import halloween from "/public/image/halloween.png";
+import glassmorphismloginform from "/public/image/glassmorphismloginform.png";
 
 export const projectsData = [
   {
@@ -59,6 +60,17 @@ export const projectsData = [
     code: "",
     link: "https://samarpitnandanwar.github.io/Netflix-Clone--SAMARPIT-NANDANWAR/",
     image: netflix,
+  },
+  {
+    id: 6,
+    name: "Glassmorphism Login Form",
+    description:
+      "Glassmorphism login form features a modern, frosted glass design that adds a stylish, blurred background effect, enhancing the visual appeal. The sleek and translucent interface creates a futuristic user experience, making the login process both elegant and engaging.",
+    tools: ["HTML", "CSS"],
+    role: "Full Stack Developer",
+    code: "",
+    link: "https://glassmorphismloginform-sn.netlify.app/",
+    image: glassmorphismloginform,
   },
 ];
 
