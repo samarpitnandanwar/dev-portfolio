@@ -1,6 +1,7 @@
 import restaurant from "/public/image/restaurant.png";
 import company from "/public/image/company.png";
 import ccfd from "/public/image/ccfd.png";
+import java from "/public/image/java.jpeg";
 import netflix from "/public/image/netflix.png";
 import halloween from "/public/image/halloween.png";
 import glassmorphismloginform from "/public/image/glassmorphismloginform.png";
@@ -71,6 +72,17 @@ export const projectsData = [
     code: "",
     link: "https://glassmorphismloginform-sn.netlify.app/",
     image: glassmorphismloginform,
+  },
+  {
+    id: 7,
+    name: "Java Projects",
+    description:
+      "Developed a portfolio of Java projects demonstrating expertise in software design, object-oriented programming, and problem-solving skills. Projects highlight proficiency in creating efficient, maintainable applications.",
+    tools: ["Java"],
+    role: "Full Stack Developer",
+    code: "",
+    link: "https://github.com/samarpitnandanwar/Java-Projects",
+    image: java,
   },
 ];
 
