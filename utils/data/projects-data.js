@@ -1,6 +1,7 @@
 import restaurant from "/public/image/restaurant.png";
 import company from "/public/image/company.png";
 import ccfd from "/public/image/ccfd.png";
+import ls from "/public/image/ls.png";
 import java from "/public/image/java.jpeg";
 import netflix from "/public/image/netflix.png";
 import halloween from "/public/image/halloween.png";
@@ -83,6 +84,17 @@ export const projectsData = [
     code: "",
     link: "https://github.com/samarpitnandanwar/Java-Projects",
     image: java,
+  },
+  {
+    id: 8,
+    name: "Light Studio",
+    description:
+      "Developed a Entertainment Website which Showcases Latest Movies and can be Downloaded.",
+    tools: ["React", "Vite", "Node", "MongoDB", "Express"],
+    role: "Full Stack Developer",
+    code: "",
+    link: "https://light-studio-2024.netlify.app/",
+    image: ls,
   },
 ];
 
